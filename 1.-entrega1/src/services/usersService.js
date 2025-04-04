@@ -15,7 +15,7 @@ class UsersService {
         return usuario
     }
     async createUser(user) {
-        console.log("ejecutando servicio de usuarios")
+
         return await this.dao.create(user)
     }
 }

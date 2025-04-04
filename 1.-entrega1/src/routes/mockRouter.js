@@ -5,7 +5,7 @@ import { usersService } from "../services/usersService.js"
 
 export const router = Router();
 
-router.get('/mockingusers/:count', (req, res) => {
+router.get('/mockingusers/', (req, res) => {
 
     const users = []
 
@@ -20,9 +20,9 @@ router.get('/mockingusers/:count', (req, res) => {
 
 router.post('/generateData', async (req, res) => {
     const { users, products } = req.body;
-    const amount = parseInt(users) || 50;
+    const amount = parseInt(users) || 2;
     const quantity = parseInt(products) || 5;
-    console.log(users, products)
+
 
     const results = []
     for (let i = 0; i < amount; i++) {

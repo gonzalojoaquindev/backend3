@@ -7,7 +7,7 @@ export class UsersMongoDAO {
     }
 
     static async create(usuario) {
-        console.log("ejecutando DAO de usuarios", usuario)
+
         return await usuariosModelo.create(usuario)
     }
 }
